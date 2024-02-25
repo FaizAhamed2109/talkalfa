@@ -4,7 +4,7 @@
 :root {
   --header-height: 3rem;
   /*========== Colors ==========*/
-  --hue-color: 206;
+  --hue-color: 216;
   --black-color: hsl(var(--hue-color), 4%, 4%);
   --black-color-alt: hsl(var(--hue-color), 4%, 8%);
   --title-color: hsl(var(--hue-color), 4%, 95%);
@@ -247,7 +247,7 @@ img {
 .home__title {
   position: absolute;
   top: -4rem;
-  left: 1rem;
+  left: 0rem;
   line-height: 6rem;
   font-size:100px;
   background: var(--text-gradient);
@@ -623,6 +623,21 @@ img {
 
 }
 
+@media screen and (min-width: 554px) {
+  .home__title {
+    top: -4rem;
+    font-size: var(--bigger-font-size);
+  }
+}
+
+@media screen and (min-width: 440px) {
+  .home__title {
+    top: -4rem;
+    font-size: 35px;
+  }
+}
+
+
 /* For medium devices */
 @media screen and (min-width: 576px) {
   .home__container {
@@ -743,6 +758,8 @@ img {
   }
   .products__card {
     height: 252px;
+    width: 200px;
+    margin-right: 20px;
     padding: .85rem;
   }
   .products__img {
