@@ -637,6 +637,14 @@ img {
   }
 }
 
+@media screen and (min-width: 350px) {
+  .home__title {
+    top: -4rem;
+    font-size: 55px;
+  }
+}
+
+
 
 /* For medium devices */
 @media screen and (min-width: 576px) {
